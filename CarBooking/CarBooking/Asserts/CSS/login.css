@@ -1,0 +1,130 @@
+﻿/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+/* Set the container width and center it */
+.container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the row and center the content */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Style the columns */
+.col-md-3, .col-md-5 {
+    padding: 0;
+}
+
+.col-md-5 {
+    max-width: 500px;
+}
+
+/* Transparent glassmorphic login form */
+form {
+    background: rgba(255, 255, 255, 0.15); /* Light transparent white */
+    backdrop-filter: blur(10px); /* Blurred effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Title styling */
+h2.text-warning {
+    text-align: center;
+    color: #2f48dd;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-height: 200px;
+}
+
+/* Input field styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Radio button styling */
+.form-group input[type="radio"] {
+    margin-right: 10px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+}
+
+/* Button styling */
+button, .btn-block {
+    padding: 12px;
+    border: 3px solid white;
+    background: linear-gradient(-10deg, white, black);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover, .btn-block:hover {
+    background: linear-gradient(-10deg, black,white);
+    border: 3px solid white;
+}
+
+/* Error message styling */
+.text-danger {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff4444;
+}
+
+/* Background Image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../Asserts/img/lamborghinilogin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Improve accessibility */
+label {
+    color: white;
+}

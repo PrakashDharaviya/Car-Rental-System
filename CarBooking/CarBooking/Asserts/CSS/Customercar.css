@@ -1,0 +1,237 @@
+﻿/* ==========================
+   Global Styles
+   ========================== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================
+   Header Styles
+   ========================== */
+header {
+    background-color: #343a40; /* Black background */
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo img {
+    height: 40px; /* Adjust logo size */
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #dc3545; /* Red hover effect */
+}
+
+.sticky-header {
+    background-color: rgb(128, 128, 128);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================
+   Responsive Header Styles
+   ========================== */
+@media (max-width: 768px) {
+    .header-logo img {
+        height: 30px;
+    }
+    nav {
+        gap: 20px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+    nav a {
+        font-size: 14px;
+    }
+}
+
+/* ==========================
+   Content Styling
+   ========================== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.jumbotron h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 18px;
+}
+
+/* ==========================
+   Car Image Grid
+   ========================== */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.col-lg-3, .col-md-8, .col-md-6 {
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width:70%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h6 {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #dc3545;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ==========================
+   Responsive Grid
+   ========================== */
+@media (max-width: 992px) {
+    .col-lg-3 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-8 {
+        width: 50%;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-8, .col-md-6 {
+        width: 100%;
+    }
+}
+
+/* ==========================
+   Additional Spacing & Effects
+   ========================== */
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.ml-5 {
+    margin-left: 5rem;
+}
+
+img + h6 {
+    margin-top: 10px;
+}
+
+.car img {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.car:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ==========================
+   Custom Navbar
+   ========================== */
+.custom-navbar {
+    background-color: #000;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #fff !important;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ddd;
+}
+
+.headfont {
+    color: white;
+}
+
+/* ==========================
+   Background Styling
+   ========================== */
+bodydvvv {
+    font-family: Arial, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    background-image: url('../../Asserts/img/lamborghinilogin.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* ==========================
+   Button Styles
+   ========================== */
+
+
+button:hover {
+    background-color: #333; /* Darker black on hover */
+}
+
